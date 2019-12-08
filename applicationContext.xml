@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="mayi"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="mayi config/beans.xsd context config/context.xsd"
+		xmlns:conext="context">
+		
+		<conext:annotation-config></conext:annotation-config>
+		<conext:component-scan base-package="com.mayi"/>
+		
+	
+</beans>

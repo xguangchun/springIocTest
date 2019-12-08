@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="mayi"
+	elementFormDefault="qualified">
+	<element name="beans">
+		<complexType>
+			<sequence>
+				<any></any>
+				<any></any>
+				<element name="bean" maxOccurs="unbounded">
+					<complexType>
+						<sequence>
+							<element name="properties" maxOccurs="unbounded">
+								<complexType>
+									<attribute name="name" type="string"></attribute>
+									<attribute name="value" type="string"></attribute>
+								</complexType>
+							</element>
+						<sequence>
+						<attribute name="id" type="string"></attribute>
+						<attribute name="class" type="string"></attribute>
+					</complexType>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+</schema>
